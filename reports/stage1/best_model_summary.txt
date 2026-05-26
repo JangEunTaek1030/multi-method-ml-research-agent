@@ -1,0 +1,2 @@
+Best model (by f1_macro): Logistic Regression
+Best f1_macro: 0.852381
