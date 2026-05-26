@@ -1,0 +1,43 @@
+Stage 2 PyTorch Baseline Summary
+=Stage 2 PyTorch Baseline Summary
+=Stage 2 PyTorch Baseline Summary
+=Stage 2 PyTorch Baseline Summary
+=Stage 2 PyTorch Baseline Summary
+=Stage 2 PyTorch Baseline Summary
+=Stage 2 PyTorch Baseline Summary
+=Stage 2 PyTorch Baseline Summary
+=Stage 2 PyTorch Baseline Summary
+=Stage 2 PyTorch Baseline Summary
+=Stage 2 PyTorch Baseline Summary
+=Stage 2 PyTorch Baseline Summary
+=Stage 2 PyTorch Baseline Summary
+=Stage 2 PyTorch Baseline Summary
+=Stage 2 PyTorch Baseline Summary
+=Stage 2 PyTorch Baseline Summary
+=Stage 2 PyTorch Baseline Summary
+=Stage 2 PyTorch Baseline Summary
+=Stage 2 PyTorch Baseline Summary
+=Stage 2 PyTorch Baseline Summary
+=Stage 2 PyTorch Baseline Summary
+=Stage 2 PyTorch Baseline Summary
+=Stage 2 PyTorch Baseline Summary
+=Stage 2 PyTorch Baseline Summary
+=Stage 2 PyTorch Baseline Summary
+=Stage 2 PyTorch Baseline Summary
+=Stage 2 PyTorch Baseline Summary
+=Stage 2 PyTorch Baseline Summary
+=Stage 2 PyTorch Baseline Summary
+=Stage 2 PyTorch Baseline Summary
+=Stage 2 PyTorch Baseline Summary
+=Stage 2 PyTorch Baseline Summary
+=Stage 2 PyTorch Baseline Summary
+=Stage 2 PyTorch Baseline Summary
+=Stage 2 PyTorch Baseline Summary
+=Stage 2 PyTorch Baseline Summary
+=
+Accuracy: 0.5714
+F1 weighted: 0.4952
+F1 macro: 0.4952
+
+This is a small PyTorch neural baseline on a tiny reproducible demo dataset.
+It is not expected to necessarily outperform Stage 1 Logistic Regression.

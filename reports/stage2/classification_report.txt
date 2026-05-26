@@ -1,0 +1,13 @@
+                        precision    recall  f1-score   support
+
+     business_overview       1.00      1.00      1.00         2
+   competitor_analysis       0.33      1.00      0.50         2
+    financial_analysis       0.67      1.00      0.80         2
+     investment_thesis       1.00      0.50      0.67         2
+           market_news       0.00      0.00      0.00         2
+         risk_analysis       0.50      0.50      0.50         2
+technology_explanation       0.00      0.00      0.00         2
+
+              accuracy                           0.57        14
+             macro avg       0.50      0.57      0.50        14
+          weighted avg       0.50      0.57      0.50        14
