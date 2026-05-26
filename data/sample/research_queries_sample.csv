@@ -1,0 +1,71 @@
+text,label
+"Summarize Xiaomi's latest EV strategy and key growth drivers.",business_overview
+"Provide a business overview of NVIDIA's data center segment and demand outlook.",business_overview
+"Outline Apple's services business model and recurring revenue drivers.",business_overview
+"Summarize Amazon's retail plus cloud flywheel and monetization logic.",business_overview
+"Explain Tesla's business model across vehicles, software, and energy storage.",business_overview
+"Describe BYD's integrated battery-to-vehicle business strategy.",business_overview
+"Give a concise overview of Adobe's subscription transition and growth engine.",business_overview
+"Summarize Meta's advertising platform economics and AI roadmap at a high level.",business_overview
+"Extract revenue growth, gross margin, and operating profit from the annual report.",financial_analysis
+"Compute quarter-over-quarter growth for cloud revenue using the last eight quarters.",financial_analysis
+"Compare operating margin trends before and after major restructuring.",financial_analysis
+"Analyze free cash flow conversion versus net income over five years.",financial_analysis
+"Break down segment revenue contribution and identify the fastest-growing segment.",financial_analysis
+"Calculate dilution impact from stock-based compensation on per-share metrics.",financial_analysis
+"Review debt maturity schedule and interest coverage under current rates.",financial_analysis
+"Assess inventory turns and working capital efficiency changes year over year.",financial_analysis
+"Compare Xiaomi, Huawei, and BYD in smart EV ecosystem competition.",competitor_analysis
+"Map competitive positioning of OpenAI, Anthropic, and Google in enterprise AI.",competitor_analysis
+"Benchmark AWS, Azure, and Google Cloud on pricing and feature depth.",competitor_analysis
+"Contrast Netflix and Disney streaming strategies for international growth.",competitor_analysis
+"Compare Taiwan semiconductor foundries by process node leadership and capacity.",competitor_analysis
+"Evaluate competitive moats of Visa versus Mastercard in cross-border payments.",competitor_analysis
+"Assess Shopify versus WooCommerce for merchant ecosystem stickiness.",competitor_analysis
+"Compare major battery makers on energy density, cost curve, and safety profile.",competitor_analysis
+"Find recent news about autonomous driving regulation in China and the US.",market_news
+"Summarize this week's policy updates affecting semiconductor export controls.",market_news
+"Track latest central bank guidance and implications for growth stocks.",market_news
+"Collect major headlines on EV price wars and subsidy changes in Europe.",market_news
+"Identify breaking news on antitrust investigations in big tech markets.",market_news
+"Compile recent M&A announcements in enterprise cybersecurity.",market_news
+"Summarize current shipping disruption news and supply chain implications.",market_news
+"Find the most recent updates on AI copyright litigation and licensing deals.",market_news
+"Identify key downside risks from overseas expansion and EV ramp-up.",risk_analysis
+"List principal risks in the 10-K and rank by potential earnings impact.",risk_analysis
+"Assess geopolitical risk exposure across critical suppliers and regions.",risk_analysis
+"Analyze customer concentration risk and renewal cliff timing.",risk_analysis
+"Evaluate downside scenarios from margin compression due to price competition.",risk_analysis
+"Assess regulatory risk from privacy laws on targeted advertising revenue.",risk_analysis
+"Identify execution risks in integrating a large acquisition.",risk_analysis
+"Stress test liquidity risk under a recessionary demand decline.",risk_analysis
+"Explain why transformer models are useful for document understanding.",technology_explanation
+"Describe retrieval-augmented generation and when it improves factual grounding.",technology_explanation
+"Explain attention mechanisms in simple terms for non-technical stakeholders.",technology_explanation
+"Summarize differences between encoder-only and decoder-only architectures.",technology_explanation
+"Explain vector databases and approximate nearest neighbor search.",technology_explanation
+"Describe how quantization reduces model inference cost and latency.",technology_explanation
+"Explain multimodal models and typical enterprise use cases.",technology_explanation
+"Clarify the trade-offs between fine-tuning and prompt engineering.",technology_explanation
+"Write an investment thesis about Xiaomi's human-car-home ecosystem.",investment_thesis
+"Draft a bull and bear case for NVIDIA over a three-year horizon.",investment_thesis
+"Build an investment thesis for ASML based on EUV demand durability.",investment_thesis
+"Propose a thesis for Microsoft centered on AI monetization in Office and Azure.",investment_thesis
+"Create an investment thesis for MercadoLibre focused on fintech expansion.",investment_thesis
+"Develop a long-term thesis for Costco emphasizing membership economics.",investment_thesis
+"Write a thesis for TSMC including pricing power and geopolitical considerations.",investment_thesis
+"Formulate an investment thesis for ServiceNow driven by workflow automation.",investment_thesis
+"Summarize Samsung's strategic priorities in memory, foundry, and mobile.",business_overview
+"Provide a business overview of Uber's mobility and delivery unit economics.",business_overview
+"Analyze gross merchandise volume growth and take-rate trends in e-commerce.",financial_analysis
+"Calculate normalized EBITDA excluding one-time restructuring charges.",financial_analysis
+"Compare Snowflake and Databricks go-to-market and platform differentiation.",competitor_analysis
+"Benchmark Coinbase versus Robinhood in crypto product breadth and monetization.",competitor_analysis
+"Summarize recent OPEC decisions and implications for airline cost structures.",market_news
+"Track latest FDA decisions impacting biotech commercialization timelines.",market_news
+"Assess key model risk assumptions in credit underwriting automation.",risk_analysis
+"Evaluate downside risk from single-cloud dependency in platform operations.",risk_analysis
+"Explain knowledge distillation for smaller domain-specific models.",technology_explanation
+"Describe how evaluation benchmarks can drift from real user workflows.",technology_explanation
+"Draft an investment thesis for ARM based on edge AI adoption.",investment_thesis
+"Create a thesis for Spotify linking pricing power to engagement metrics.",investment_thesis
