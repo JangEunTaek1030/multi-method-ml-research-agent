@@ -36,13 +36,15 @@ The system aims to support the following tasks:
 
 ### Stage 1: Traditional Machine Learning Baselines
 
-- Data loading
+- **Task:** research task classification (not movie review sentiment classification)
+- Data loading from real CSV files via command-line arguments
 - Text preprocessing
 - TF-IDF feature extraction
 - Logistic Regression
+- Naive Bayes
 - Random Forest
-- XGBoost / LightGBM
-- Model evaluation
+- Model evaluation (macro F1 and classification report)
+- Save outputs under `reports/stage1`
 
 ### Stage 2: Deep Learning Models
 
@@ -126,21 +128,30 @@ The system aims to support the following tasks:
 
 ## 5. Current Status
 
-Current stage: Stage 0 - project setup.
+Current stage: **Stage 1 completed** (traditional machine learning baseline).
 
 Completed:
 
-- Project idea defined
-- Technical roadmap defined
-- Initial project structure designed
-- README v0 created
+- Stage 0 project setup completed
+- Stage 1 traditional ML baseline completed for **research task classification**
+- Stage 1 runner validated with real CSV input:
+  - `python scripts/run_stage1_ml_baseline.py --data data/sample/research_queries_sample.csv --text_col text --label_col label`
+- Sample dataset prepared at `data/sample/research_queries_sample.csv`:
+  - 70 rows
+  - 7 balanced research task categories
+  - columns: `text`, `label`
+- Baseline models implemented with TF-IDF features:
+  - Logistic Regression
+  - Naive Bayes
+  - Random Forest
+- Best model on the sample dataset: **Logistic Regression**
+- Best macro F1 on the sample dataset: **~0.852**
+- Stage 1 reports are saved under `reports/stage1`
+- Result note: this sample dataset is a **small reproducible demo**, not a production-scale benchmark
 
 Next step:
 
-- Set up Python environment
-- Add initial project files
-- Make the first Git commit
-- Start Stage 1: traditional machine learning baseline
+- Start Stage 2: PyTorch neural baseline
 
 ## 6. Learning Goals
 
