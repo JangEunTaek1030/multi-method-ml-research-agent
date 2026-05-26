@@ -46,14 +46,15 @@ The system aims to support the following tasks:
 - Model evaluation (macro F1 and classification report)
 - Save outputs under `reports/stage1`
 
-### Stage 2: Deep Learning Models
+### Stage 2: Deep Learning Models (Completed)
 
-- PyTorch Dataset and DataLoader
-- Embedding layer
-- MLP / TextCNN
-- Training loop
-- Validation loop
-- Loss curve visualization
+- **Task:** same research task classification as Stage 1
+- **Dataset/labels:** same `data/sample/research_queries_sample.csv` and same label system
+- Tokenizer → vocabulary → token ids → padding → Dataset/DataLoader
+- Embedding → masked mean pooling → MLP classifier
+- CrossEntropyLoss + Adam optimizer
+- Save outputs under `reports/stage2`
+- Educational small neural baseline; may not outperform Stage 1 Logistic Regression on this tiny demo dataset
 
 ### Stage 3: Mini Transformer from Scratch
 
@@ -128,7 +129,7 @@ The system aims to support the following tasks:
 
 ## 5. Current Status
 
-Current stage: **Stage 1 completed** (traditional machine learning baseline).
+Current stage: **Stage 2 completed** (PyTorch neural baseline), **Stage 3 upcoming** (Mini Transformer from scratch).
 
 Completed:
 
@@ -140,18 +141,28 @@ Completed:
   - 70 rows
   - 7 balanced research task categories
   - columns: `text`, `label`
-- Baseline models implemented with TF-IDF features:
+- Stage 1 baseline models implemented with TF-IDF features:
   - Logistic Regression
   - Naive Bayes
   - Random Forest
-- Best model on the sample dataset: **Logistic Regression**
-- Best macro F1 on the sample dataset: **~0.852**
+- Best Stage 1 model on the sample dataset: **Logistic Regression**
+- Best Stage 1 macro F1 on the sample dataset: **~0.852**
 - Stage 1 reports are saved under `reports/stage1`
-- Result note: this sample dataset is a **small reproducible demo**, not a production-scale benchmark
+
+Stage 2 completion details:
+
+- PyTorch neural text classification baseline implemented
+- Reused the same Stage 1 dataset and label system for fair comparison
+- Pipeline: tokenizer → vocabulary → token ids → padding → Dataset/DataLoader
+- Model: Embedding → masked mean pooling → MLP classifier
+- Training: CrossEntropyLoss + Adam optimizer
+- Stage 2 reports are saved under `reports/stage2`
+- Final Stage 2 macro F1 on this small demo split is around **0.495**
+- Result note: this Stage 2 baseline is educational and may not outperform Stage 1 Logistic Regression on this tiny reproducible dataset
 
 Next step:
 
-- Start Stage 2: PyTorch neural baseline
+- Start Stage 3: Mini Transformer from scratch
 
 ## 6. Learning Goals
 
