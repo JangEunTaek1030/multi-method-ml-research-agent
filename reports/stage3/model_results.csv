@@ -1,0 +1,2 @@
+﻿accuracy,precision_weighted,recall_weighted,f1_weighted,f1_macro,model,val_loss
+0.35714285714285715,0.5873015873015872,0.35714285714285715,0.40692640692640686,0.40692640692640686,MiniTransformerTextClassifier,5.221710681915283

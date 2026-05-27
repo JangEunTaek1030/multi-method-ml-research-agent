@@ -56,16 +56,15 @@ The system aims to support the following tasks:
 - Save outputs under `reports/stage2`
 - Educational small neural baseline; may not outperform Stage 1 Logistic Regression on this tiny demo dataset
 
-### Stage 3: Mini Transformer from Scratch
+### Stage 3: Mini Transformer from Scratch (Completed)
 
-- Token embedding
-- Position embedding
-- Self-attention
-- Multi-head attention
+- Mini Transformer text classifier implemented from scratch
+- Token embedding + position embedding
+- Multi-head self-attention
 - Feed-forward network
-- Residual connection
-- LayerNorm
+- Residual connection + LayerNorm
 - Transformer encoder block
+- Reports saved under `reports/stage3`
 
 ### Stage 4: BERT Fine-tuning
 
@@ -129,7 +128,7 @@ The system aims to support the following tasks:
 
 ## 5. Current Status
 
-Current stage: **Stage 2 completed** (PyTorch neural baseline), **Stage 3 upcoming** (Mini Transformer from scratch).
+Current stage: **Stage 3 completed** (Mini Transformer baseline from scratch), **Stage 4 upcoming** (BERT fine-tuning).
 
 Completed:
 
@@ -162,7 +161,7 @@ Stage 2 completion details:
 
 Next step:
 
-- Start Stage 3: Mini Transformer from scratch
+- Start Stage 4: BERT fine-tuning
 
 ## 6. Learning Goals
 

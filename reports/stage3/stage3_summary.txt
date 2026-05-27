@@ -1,0 +1,27 @@
+Stage 3 Mini Transformer Baseline Summary
+========================================
+
+Task:
+Research task classification using the Stage 2 dataset pipeline.
+
+Model:
+MiniTransformerTextClassifier built from scratch
+Token embedding + position embedding + self-attention encoder block(s) + masked mean pooling
+
+Dataset:
+data/sample/research_queries_sample.csv
+text,label columns
+
+Metrics:
+Accuracy: 0.3571
+F1 weighted: 0.4069
+F1 macro: 0.4069
+
+Outputs:
+reports/stage3/model_results.csv
+reports/stage3/classification_report.txt
+reports/stage3/training_log.csv
+reports/stage3/stage3_summary.txt
+
+Note:
+This is a small educational Transformer baseline from scratch, not a production benchmark.

@@ -8,13 +8,13 @@ Build an end-to-end research intelligence system across:
 traditional ML → deep learning → Transformer → BERT → RAG → LLM report generation.
 
 ## Current Stage
-**Stage 2 completed; next step Stage 3 Mini Transformer from scratch.**
+**Stage 3 completed; next step Stage 4 BERT fine-tuning.**
 
 ## Roadmap Status
 - [x] Stage 0: Project setup
 - [x] Stage 1: Traditional ML baseline
 - [x] Stage 2: PyTorch deep learning baseline
-- [ ] Stage 3: Mini Transformer from scratch
+- [x] Stage 3: Mini Transformer from scratch
 - [ ] Stage 4: BERT fine-tuning
 - [ ] Stage 5: RAG document QA system
 - [ ] Stage 6: LLM-based report generation
@@ -38,7 +38,12 @@ traditional ML → deep learning → Transformer → BERT → RAG → LLM report
 - Reports output directory: `reports/stage2`.
 - This is a small neural baseline for learning/comparison, not a production benchmark.
 
-## Next Step
-Stage 3 Mini Transformer from scratch planning/implementation.
+## Stage 3 Snapshot
+- Implemented `MiniTransformerTextClassifier` from scratch using PyTorch basic layers.
+- Added manual multi-head self-attention, feed-forward network, residual connections, and LayerNorm encoder block(s).
+- Reused Stage 2 dataset pipeline: `ResearchTextDataset`, `build_vocab`, `build_label_mapping`.
+- Added Stage 3 baseline runner: `scripts/run_stage3_mini_transformer_baseline.py`.
+- Added Stage 3 outputs under `reports/stage3`: metrics table, classification report, training log, and summary file.
 
-- Stage 3A preparation added: `scripts/study_stage3_attention_from_scratch.py` for educational attention mechanics walkthrough before implementing the full Mini Transformer classifier.
+## Next Step
+Stage 4 BERT fine-tuning.

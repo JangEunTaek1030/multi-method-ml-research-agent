@@ -114,3 +114,48 @@ def save_stage2_outputs(output_dir, metrics, y_true, y_pred, id_to_label, traini
     )
     (output_dir / "stage2_summary.txt").write_text(summary_text, encoding="utf-8")
 
+
+
+def save_stage3_outputs(output_dir, metrics, y_true, y_pred, id_to_label, training_log):
+    output_dir = Path(output_dir)
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    results_df = pd.DataFrame([metrics])
+    results_df.to_csv(output_dir / "model_results.csv", index=False, encoding="utf-8-sig")
+
+    target_names = [id_to_label[i] for i in sorted(id_to_label.keys())]
+    report_text = classification_report(
+        y_true,
+        y_pred,
+        labels=sorted(id_to_label.keys()),
+        target_names=target_names,
+        zero_division=0,
+    )
+    (output_dir / "classification_report.txt").write_text(report_text, encoding="utf-8")
+
+    pd.DataFrame(training_log).to_csv(output_dir / "training_log.csv", index=False, encoding="utf-8-sig")
+
+    summary_text = (
+        "Stage 3 Mini Transformer Baseline Summary\n"
+        "========================================\n\n"
+        "Task:\n"
+        "Research task classification using the Stage 2 dataset pipeline.\n\n"
+        "Model:\n"
+        "MiniTransformerTextClassifier built from scratch\n"
+        "Token embedding + position embedding + self-attention encoder block(s) + masked mean pooling\n\n"
+        "Dataset:\n"
+        "data/sample/research_queries_sample.csv\n"
+        "text,label columns\n\n"
+        "Metrics:\n"
+        f"Accuracy: {metrics['accuracy']:.4f}\n"
+        f"F1 weighted: {metrics['f1_weighted']:.4f}\n"
+        f"F1 macro: {metrics['f1_macro']:.4f}\n\n"
+        "Outputs:\n"
+        "reports/stage3/model_results.csv\n"
+        "reports/stage3/classification_report.txt\n"
+        "reports/stage3/training_log.csv\n"
+        "reports/stage3/stage3_summary.txt\n\n"
+        "Note:\n"
+        "This is a small educational Transformer baseline from scratch, not a production benchmark.\n"
+    )
+    (output_dir / "stage3_summary.txt").write_text(summary_text, encoding="utf-8")
