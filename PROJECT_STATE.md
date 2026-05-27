@@ -40,3 +40,5 @@ traditional ML → deep learning → Transformer → BERT → RAG → LLM report
 
 ## Next Step
 Stage 3 Mini Transformer from scratch planning/implementation.
+
+- Stage 3A preparation added: `scripts/study_stage3_attention_from_scratch.py` for educational attention mechanics walkthrough before implementing the full Mini Transformer classifier.
